@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Value Diagram</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/collapsable-accordion.css">
+	<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/paperjs/paper-full.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+	
+</head>
+<body>
+	<div id="display">
+		<div class="canvas"><canvas id="canvas-holon-app" resize="true" width="700px" height="700px"></canvas></div>
+		<image id="freedom" src="http://www.singularitylaboratory.org/wp-content/uploads/community_house_diagram/Icons/Values/road_fork.png" style="display:none"></image>
+		<image id="abundance" src="http://www.singularitylaboratory.org/wp-content/uploads/community_house_diagram/Icons/Values/gears.png" style="display:none"></image>
+		<image id="efficiency" src="http://www.singularitylaboratory.org/wp-content/uploads/community_house_diagram/Icons/Values/food_basket.png" style="display:none"></image>
+		<image id="regeneration" src="http://www.singularitylaboratory.org/wp-content/uploads/community_house_diagram/Icons/Values/plant.png" style="display:none"></image>
+		<image id="collaboration" src="http://www.singularitylaboratory.org/wp-content/uploads/community_house_diagram/Icons/Values/talk_bubble.png" style="display:none"></image>
+		<image id="access" src="http://www.singularitylaboratory.org/wp-content/uploads/community_house_diagram/Icons/Values/open.png" style="display:none"></image>
+		<image id="health" src="http://www.singularitylaboratory.org/wp-content/uploads/community_house_diagram/Icons/Values/heartbeat.png" style="display:none"></image>
+		<image id="love" src="http://www.singularitylaboratory.org/wp-content/uploads/community_house_diagram/Icons/Values/love.png" style="display:none"></image>
+		<image id="discovery" src="http://www.singularitylaboratory.org/wp-content/uploads/community_house_diagram/Icons/Values/walk.png" style="display:none"></image>
+		<image id="intrinsic motivation" src="http://www.singularitylaboratory.org/wp-content/uploads/community_house_diagram/Icons/Values/meditation.png" style="display:none"></image>
+
+		<image id="community" src="http://www.singularitylaboratory.org/wp-content/uploads/2015/09/people.png" style="display:none"></image>
+		<image id="abcd" src="http://www.singularitylaboratory.org/wp-content/uploads/2015/09/abcd.png" style="display:none"></image>
+		<image id="flower" src="http://www.singularitylaboratory.org/wp-content/uploads/community_house_diagram/Icons/Human%20Needs/flower.png" style="display:none"></image>
+		<image id="et" src="http://2.bp.blogspot.com/-o3NnI_ZdwYc/VjraPTUMxoI/AAAAAAAACbs/y5qjZM2ay5k/s1600/et.png" style="display:none"></image>
+	</div>
+	
+	<div id="controls">
+		<h2>Controls</h2>
+		<h3>Color Picker (click swatches to change)</h3>
+	</div>
+	
+	<!-- ### LoveCompassionModal ### -->
+	<div id="values-modal" class="modal">
+	  <!-- Modal content -->
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h1><img id="modal-image" src="http://futuristplayground.org/wp-content/uploads/2016/11/love-and-compassion.png" width="50px"> <span id="modal-title"></span> <span class="close">×</span></h1>
+		  <!-- <h3><i>The ability to find appreciation and compassion for all life and beings.</i></h3> -->
+		</div>
+		<div class="modal-body">
+			<div id="modal-details" class="container">
+			</div>
+			<br style="clear: left;" />
+		</div>
+		<div class="modal-footer">
+		  <h3><a href="http://futuristplayground.org" target="_blank">Futurist Playground.org</a></h3>
+		</div>
+	  </div>
+	</div>
+</body>
+</html>

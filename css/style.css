@@ -1,0 +1,24 @@
+.canvas {
+	/* background-color:#C0C0C0; */
+}
+
+div#display {
+    width: 60%;
+    /* height: 700px; */
+    /* background: red; */
+    float: left;
+}
+div#controls {
+    margin-left: 15%;
+    height: 200px;
+    /* background: black; */
+}
+
+/* ROOT FONT STYLES */
+
+ * {
+  font-family: 'Lato', Helvetica, sans-serif;
+  color: #333447;
+  /* line-height: 1.5; */
+} 
+
