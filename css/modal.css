@@ -1,5 +1,16 @@
 /* MODAL */
 
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -17,11 +28,14 @@
 /* Modal Content */
 .modal-content {
     position: relative;
-    background-color: #fefefe;
+    background-color: #E9EBEE;
     margin: auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
     padding: 0;
     border: 1px solid #888;
     width: 90%;
+	 overflow: auto;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -29,28 +43,27 @@
     animation-duration: 0.4s
 }
 
-#modal-image {
+.modal-image {
+	display: inline-block;
 	vertical-align: middle;
 	padding-bottom: 10px;
+	width: 50px;
+	
 }
-
-/* Add Animation */
-@-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
-}
-
-@keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
+.modal-title {
+    display: inline-block;
 }
 
 /* The Close Button */
 .close {
     color: white;
-    float: right;
-    font-size: 48px;
+    /* float: right; */
+	font-size: 32px;
     font-weight: bold;
+	
+	position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 .close:hover,
@@ -61,29 +74,40 @@
 }
 
 .modal-header {
-    padding: 2px 16px;
-    background-color: #2F7CBF;
+    padding: 16px 16px;
+    background-color: #68a7ca;
     color: white;
+}
+.modal-header h1 {
+	color: white;
 }
 
 .modal-body {
-	padding: 2px 16px;
-	background-color: lightgrey;
+	padding: 16px 16px;
 }
 
-.modal-footer {
-    padding: 2px 16px;
-    background-color: #2F7CBF;
-    color: white;
-}
-
-.container {
+.modal-body-content {
     column-count: 2;
     -moz-column-count: 2;
     -webkit-column-count: 2;
     width: 100%;
 }
-.modal-section {
+/* Responsive bit*/
+@media only screen and (max-width: 600px) {
+.modal-body-content {
+    column-count: 1;
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    width: 100%;
+}
+}
+
+.column {
+	padding: 12px 12px 0;
+	background-color: #FFFFFF;
+}
+
+.modal-body-content-section {
     /* background: red; */
     /*-webkit-column-break-inside: avoid;
     -moz-column-break-inside:avoid;
@@ -91,15 +115,14 @@
     page-break-inside: avoid;*/
     display: inline-block;
      /* height: 100px;  */
-     margin-bottom: 20px; 
+     margin-bottom: 20px;
     width: 100%;
 }
-/* Responsive bit*/
-@media only screen and (max-width: 960px) {
-.container {
-    column-count: 1;
-    -moz-column-count: 1;
-    -webkit-column-count: 1;
-    width: 100%;
+
+.modal-footer {
+    padding: 16px;
+	vertical-align: text-middle;
+    background-color: #68a7ca;
+    color: white;
 }
-}
+
